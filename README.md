@@ -28,5 +28,5 @@ for dim in [2,5]:
                                         n_variables = dim)
             f_new.set_instance(idx)
             optimizer = JADE()
-            optimizer()
+            optimizer(f_new, seed)
 ```
