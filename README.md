@@ -18,6 +18,7 @@ The cma-es code is part of the library:
 
 The method has a memory of evaluations, so every run needs to be on a new object
 
+```python
 for dim in [2,5]: 
     for idx in tqdm(range(1000)):
         for seed in range(10):
@@ -28,3 +29,4 @@ for dim in [2,5]:
             f_new.set_instance(idx)
             optimizer = JADE()
             optimizer()
+```
